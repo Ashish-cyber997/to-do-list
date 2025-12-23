@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Digital To-Do List</h1>
+
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Enter task">
+
+      <select id="priorityInput">
+        <option value="High">High Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="Low">Low Priority</option>
+      </select>
+
+      <select id="categoryInput">
+        <option value="Student">Student</option>
+        <option value="Employee">Employee</option>
+        <option value="Coding">Coding / IT</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Yoga">Yoga / Health</option>
+        <option value="Personal">Personal</option>
+        <option value="Household">Household</option>
+        <option value="Interview">Interview Prep</option>
+      </select>
+
+      <input type="datetime-local" id="timeInput">
+
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h2>Your Tasks</h2>
+    <div id="taskList"></div>
+
+    
+    
+
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
